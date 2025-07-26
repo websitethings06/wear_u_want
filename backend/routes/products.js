@@ -5,135 +5,135 @@ const router = express.Router();
 let products = [
   {
     id: 1,
-    name: "WUNDERLOVE Classic White T-Shirt",
+    name: "STYLE Classic White T-Shirt",
     category: "tops",
     price: 899,
     description: "Comfortable cotton t-shirt perfect for everyday wear",
     sizes: ["S", "M", "L", "XL"],
     colors: ["white", "black", "gray"],
-    image: "https://via.placeholder.com/300x400?text=WUNDERLOVE+T-Shirt",
-    brand: "WUNDERLOVE"
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop",
+    brand: "STYLE"
   },
   {
     id: 2,
-    name: "LUNA BLU Slim Fit Jeans",
+    name: "FASHION Slim Fit Jeans",
     category: "bottoms",
     price: 2499,
     description: "Modern slim fit jeans with stretch comfort",
     sizes: ["30x32", "32x32", "34x32", "36x32"],
     colors: ["blue", "black"],
-    image: "https://via.placeholder.com/300x400?text=LUNA+BLU+Jeans",
-    brand: "LUNA BLU"
+    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop",
+    brand: "FASHION"
   },
   {
     id: 3,
-    name: "WARDROBE Casual Hoodie",
+    name: "TRENDY Casual Hoodie",
     category: "outerwear",
     price: 1799,
     description: "Warm and cozy hoodie for casual occasions",
     sizes: ["S", "M", "L", "XL"],
     colors: ["navy", "gray", "black"],
-    image: "https://via.placeholder.com/300x400?text=WARDROBE+Hoodie",
-    brand: "WARDROBE"
+    image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=400&fit=crop",
+    brand: "TRENDY"
   },
   {
     id: 4,
-    name: "NUON Summer Dress",
+    name: "ELEGANT Summer Dress",
     category: "tops",
     price: 1599,
     description: "Elegant summer dress with floral pattern",
     sizes: ["XS", "S", "M", "L"],
     colors: ["pink", "blue", "yellow"],
-    image: "https://via.placeholder.com/300x400?text=NUON+Dress",
-    brand: "NUON"
+    image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=400&fit=crop",
+    brand: "ELEGANT"
   },
   {
     id: 5,
-    name: "WESTERN Denim Jacket",
+    name: "MODERN Denim Jacket",
     category: "outerwear",
     price: 2999,
     description: "Classic denim jacket with modern styling",
     sizes: ["S", "M", "L", "XL"],
     colors: ["blue", "black"],
-    image: "https://via.placeholder.com/300x400?text=WESTERN+Jacket",
-    brand: "WESTERN"
+    image: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300&h=400&fit=crop",
+    brand: "MODERN"
   },
   {
     id: 6,
-    name: "STYLE High-Waist Pants",
+    name: "CASUAL High-Waist Pants",
     category: "bottoms",
     price: 1899,
     description: "Elegant high-waist pants for formal occasions",
     sizes: ["28", "30", "32", "34"],
     colors: ["black", "navy", "beige"],
-    image: "https://via.placeholder.com/300x400?text=STYLE+Pants",
-    brand: "STYLE"
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    brand: "CASUAL"
   },
   {
     id: 7,
-    name: "FASHION Blouse",
+    name: "CHIC Blouse",
     category: "tops",
     price: 1299,
     description: "Professional blouse with button-up design",
     sizes: ["S", "M", "L", "XL"],
     colors: ["white", "pink", "blue"],
-    image: "https://via.placeholder.com/300x400?text=FASHION+Blouse",
-    brand: "FASHION"
+    image: "https://images.unsplash.com/photo-1564257631407-3deb25e9c8e6?w=300&h=400&fit=crop",
+    brand: "CHIC"
   },
   {
     id: 8,
-    name: "TRENDY Jumpsuit",
+    name: "URBAN Jumpsuit",
     category: "tops",
     price: 2199,
     description: "Stylish jumpsuit for modern women",
     sizes: ["XS", "S", "M", "L"],
     colors: ["black", "navy", "olive"],
-    image: "https://via.placeholder.com/300x400?text=TRENDY+Jumpsuit",
-    brand: "TRENDY"
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    brand: "URBAN"
   },
   {
     id: 9,
-    name: "MODERN Blazer",
+    name: "PROFESSIONAL Blazer",
     category: "outerwear",
     price: 3499,
     description: "Professional blazer for office wear",
     sizes: ["S", "M", "L", "XL"],
     colors: ["black", "navy", "gray"],
-    image: "https://via.placeholder.com/300x400?text=MODERN+Blazer",
-    brand: "MODERN"
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    brand: "PROFESSIONAL"
   },
   {
     id: 10,
-    name: "CASUAL Shirt",
+    name: "BASIC Shirt",
     category: "tops",
     price: 999,
     description: "Casual shirt perfect for everyday wear",
     sizes: ["S", "M", "L", "XL"],
     colors: ["white", "blue", "striped"],
-    image: "https://via.placeholder.com/300x400?text=CASUAL+Shirt",
-    brand: "CASUAL"
+    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=400&fit=crop",
+    brand: "BASIC"
   },
   {
     id: 11,
-    name: "ELEGANT Skirt",
+    name: "GRACE Skirt",
     category: "bottoms",
     price: 1499,
     description: "Elegant skirt for formal occasions",
     sizes: ["XS", "S", "M", "L"],
     colors: ["black", "navy", "gray"],
-    image: "https://via.placeholder.com/300x400?text=ELEGANT+Skirt",
-    brand: "ELEGANT"
+    image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop",
+    brand: "GRACE"
   },
   {
     id: 12,
-    name: "SPORTY Shorts",
+    name: "ACTIVE Shorts",
     category: "bottoms",
     price: 799,
     description: "Comfortable shorts for active lifestyle",
     sizes: ["S", "M", "L", "XL"],
     colors: ["black", "gray", "navy"],
-    image: "https://via.placeholder.com/300x400?text=SPORTY+Shorts",
-    brand: "SPORTY"
+    image: "https://images.unsplash.com/photo-1542272604-787c3835535d?w=300&h=400&fit=crop",
+    brand: "ACTIVE"
   }
 ];
 
