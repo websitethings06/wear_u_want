@@ -16,9 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 // Import routes
 const productsRoutes = require('./routes/products');
 
-// Basic route
+// Basic routes
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'Welcome to Wear U Want API',
     version: '1.0.0',
     status: 'running',
